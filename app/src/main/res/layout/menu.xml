@@ -6,24 +6,31 @@
     android:orientation="vertical"
     android:background="#ffa500"
     android:gravity="bottom"
-    android:padding="20dp">
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:src="@drawable/hvktmm"/>
+    android:padding="20dp"
+    tools:context=".menu">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:id="@+id/imageProfile1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/avt_image"
+        android:scaleType="centerCrop"/>
 
     <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/baloo"
-        android:text="Tạ Xuân Hải"
+        android:fontFamily="@font/abeezee"
         android:textSize="24sp" />
 
     <TextView
+        android:id="@+id/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/actor"
-        android:text="0346407449"
+        android:fontFamily="@font/abeezee"
         android:textSize="14sp" />
 
 

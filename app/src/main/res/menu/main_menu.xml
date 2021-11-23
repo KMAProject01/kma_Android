@@ -19,9 +19,10 @@
             android:title="Hỗ Trợ" />
 
     </group>
-    <group android:checkableBehavior="single">
-        <item android:title="Hồ Sơ">
-            <menu>
+
+    <item android:title="Hồ Sơ">
+        <menu>
+            <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/nav_profile"
                     android:icon="@drawable/ic_baseline_3p_24"
@@ -34,17 +35,20 @@
                     android:id="@+id/nav_class"
                     android:icon="@drawable/ic_baseline_class_24"
                     android:title="Lớp" />
-            </menu>
+            </group>
+        </menu>
 
-        </item>
+    </item>
 
-    </group>
+
     <item android:title="Điều Hướng ">
         <menu>
+            <group android:checkableBehavior="single">
             <item
                 android:id="@+id/nav_logout"
-                android:title="Đăng Xuất"
-                android:icon="@drawable/outline_logout_black_24"/>
+                android:icon="@drawable/outline_logout_black_24"
+                android:title="Đăng Xuất" />
+            </group>
         </menu>
 
     </item>
